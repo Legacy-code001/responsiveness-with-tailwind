@@ -1,0 +1,524 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive-with-tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./tailwind.min.css">
+    <style type="text/tailwindcss">
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+  
+        .smallBox {
+          @apply w-[12%] md:w-[13.3%] lg:w-[12%] h-[45px] md:h-[90px] lg:h-[60px] border-gray-700 border-[1.5px] rounded-sm text-xs flex items-center justify-center hover:bg-[#D3D4D5] hover:cursor-pointer;
+          /* color: #090909; */
+        }
+      </style>
+
+</head>
+<body>
+    <header class="w-[100vw] shadow-lg shadow-slate-200">
+        
+        <div class="w-[100%] bg-[rgb(176,150,118)] py-2  text-white relative">
+            <p class="text-center">free shipping on orders over $75</p>
+            <i class="fa fa-arrow-right absolute right-[250px] top-[12px]" aria-hidden="true" ></i>
+        </div>
+        <!-- lower part of the header -->
+        <div class="w-[100%] py-5 px-10 flex justify-between item-center"> 
+            <!-- left lower part of the header -->
+            <div class=":px-3 text-xs font-bold uppercase tracking-widest flex items-center gap-7">
+                <a href="" class="hidden lg:block">Men</a>
+                <a href="" class="hidden lg:block">Women</a>
+                <a href="" class="hidden lg:block">Socks</a>
+                <a href="" class="hidden lg:block text-[rgb(173,31,0)] hover:underline">Sale</a>
+                <i class="fa fa-bars lg:hidden" aria-hidden="true"></i>
+            </div>
+            <!-- right lower part of the header -->
+            <div class=" px-3 flex text-xs font-bold uppercase tracking-widest items-center gap-7">
+                <a href="" class="hidden lg:block">Sustanability</a>
+                <a href="" class="hidden lg:block">Rerun</a>
+                <a href="" class="hidden lg:block">stocks</a>
+                <i class="fa fa-search text-xl font-thin hidden lg:block" aria-hidden="true"></i>
+                <i class="fa fa-user text-xl font-thin hidden lg:block" aria-hidden="true"></i>
+                <i class="fa fa-question-circle-o text-xl font-thin hidden lg:block" aria-hidden="true"></i>
+                <i class="fa fa-shopping-cart text-xl font-thin" aria-hidden="true"></i>
+            </div>
+        </div>
+    </header>
+    <main class="w-screen">  
+        
+        <section class="w-full flex flex-col pl-3 pr-3 gap-3 lg:flex-row gap-[5%] lg:pr-10 lg:pl-6 pt-10 box-border">
+            <div class="w-full pt-3 lg:hidden">
+                <div class="w-full flex gap-[1px] mb-2 text-xs font-normal">
+                    <a href="">Home</a>
+                    <span>/</span>
+                    <a href="">Men's Shoes</a>
+                    <span>/</span>
+                    <a href="">Everyday Sneakers</a>
+                    <span>/</span>
+                </div>
+                <h2 class="inline lg:text-xl font-bold mb-2">Men's Wool Piper Go</h2>
+                <p class="inline ml-[40%] md:ml-[70%] lg:mb-2">$120<span class="hidden lg:ml-3 bg-pink-500 uppercase">Free shipping</span></p>
+                <div class="w-full flex gap-1 my-3">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="w-full h-[350px] md:h-[700px] lg:h-[600px] lg:w-[60%] flex gap-2">
+                <div class="hidden lg:block w-[10%] py-3 ">
+                    <img src="./assets/images/shoe-sm-1.avif" class="mb-3 alt="">
+                    <img src="./assets/images/shoe-sm-2.avif" class="mb-3" alt="">
+                    <img src="./assets/images/shoe-sm-3.avif" class="mb-3" alt="">
+                    <img src="./assets/images/shoe-sm-4.avif" class="mb-3" alt="">
+                    <img src="./assets/images/shoe-sm-5.avif" class="mb-3" alt="">
+                    <img src="./assets/images/shoe-sm-6.avif" class="mb-3" alt="">
+                    <img src="./assets/images/shoe-sm-7.avif" class="mb-3" alt="">
+                </div>
+                <div class="w-[100%] lg:w-[90%] bg-[rgb(245,245,245)] ">
+                    <img src="./assets/images/show-2.avif" alt="">
+                </div>
+            </div>
+            <div class="w-[100%] lg:w-[40%] font-semibold md:px-6 lg:px-0 py-2">
+                <div class="hidden lg:block w-full flex gap-2 mb-3 text-xs">
+                    <a href="" class="text-xs">Home</a>
+                    <span>/</span>
+                    <a href="" class="text-xs">Men's Shoes</a>
+                    <span>/</span>
+                    <a href="" class="text-xs">Everyday Sneakers</a>
+                    <span>/</span>
+                </div>
+                <h1 class="hidden lg:block text-xl font-bold mb-2">Men's Wool Piper Go</h1>
+                <p class="hidden lg:block mb-2">$120<span class="ml-3 bg-[rgb(245,245,245)] text-sm uppercase p-1">Free shipping</span></p>
+                <div class="hidden  lg:block w-full flex gap-1 mb-4">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <h2 class="mt-[5px] lg:w-full text-md mb-2 font-light">Classics:</h2>
+                <div class="w-full flex gap-2 mb-2">
+                    <!-- <img src="./assets/images/classic-1.png" alt="" class="h-[70px]"> -->
+                    <img src="./assets/images/classic-2.png" alt="" class="h-[50px]" >
+                    <img src="./assets/images/classic-3png.png" alt="" class="h-[50px]">
+                    <img src="./assets/images/classic-3png.png" alt="" class="h-[50px]">
+                </div>
+                <p class="font-normal mb-2 text-xs font-semibold"><span class="uppercase mr-1 font-semibold text-sm">Limited Edition:</span>Stony Beige (Stony Cream Sole)</p>
+                <img src="./assets/images/classic-4.png" alt="" class="h-[50px] mb-6">    
+                <h2 class="uppercase text-sm font-semibold mb-2">Select Size:</h2>
+                <div  class="w-full flex flex-wrap gap-x-2 gap-y-3 mb-7">
+                    <div class="smallBox">8</div>
+                    <div class="smallBox">8.5</div>
+                    <div class="smallBox">9</div>
+                    <div class="smallBox">9.5</div>
+                    <div class="smallBox">10</div>
+                    <div class="smallBox">10.5</div>
+                    <div class="smallBox">11</div>
+                    <div class="smallBox">11.5</div>
+                    <div class="smallBox">12</div>
+                    <div class="smallBox">12.5</div>
+                    <div class="smallBox">13</div>
+                    <div class="smallBox">13.5</div>
+                </div>        
+                <p class="h-14 w-full] text-white bg-[rgb(211,212,213)] text-center h-12 p-3 mb-2">Add to cart - $20</p>
+                <div class="w-[80%] mx-auto lg:w-full text-center py-2 flex flex-wrap items-center justify-center gap-x-3 gap-y-0 mb-3 text-xs">
+                    <img src="./assets/images/shoprunner.png" alt="" class="h-4">
+                    <p>FREE 2-Day Shipping.</p>
+                    <a href="">Sign Up FREE</a>
+                    <span>l</span>
+                    <a href="">Sign In</a>
+                </div>
+                <p class="w-full text-center font-light text-xs">Free Shipping on orders of $75. Free extended returns through January 17th*</p>
+                
+            </div>
+            
+        </section>
+        <section class="w-full flex flex-col gap-3 pl-3 pr-3 lg:flex-row gap-[5%] lg:pr-10 lg:pl-6 box-border">
+            <div class="w-full lg:w-[60%]">
+                <div class="text-sm lg:w-full mt-[5px] bg-[rgb(245,245,245)] h-[250px] grid grid-rows-4 ">
+                    <h2 class="text-center py-5 border-b-[1.5px] border-b-[rgb(211,212,213)]">Wool Piper Go Highlights</h2>
+                    <p class="text-center py-5 border-b-[1.5px] border-b-[rgb(211,212,213)]">Luxe wool blend keeps things warm and cozy</p>
+                    <p class="text-center py-5 border-b-[1.5px] border-b-[rgb(211,212,213)]">Improved material construction levels up fit and durability</p>
+                    <p class="text-center py-5">Refined wool blend upper for a polished finish</p>
+    
+                </div>
+                <div class="w-full mt-[45px] h-[185px] grid grid-rows-4">
+                    <div class="uppercase text-xs font-semibold border-t-[1.5px] border-b-[1.5px] flex justify-between items-center">
+                        <a href="#">Details</a>
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="uppercase text-xs font-semibold border-b-[1.5px] flex justify-between items-center">
+                        <a href="#">Sustainability</a>
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="uppercase text-xs font-semibold border-b-[1.5px] flex justify-between items-center">
+                        <a href="#">Care Guide</a>
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+                    <div class="uppercase text-xs font-semibold border-b-[1.5px] flex justify-between items-center">
+                        <a href="#">Shipping & Returns</a>
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full lg:w-[40%]">
+                <div class="hidden lg:block w-full my-[10px] pt-[20px] pb-[50px]  border-b-[1.5px] border-t-[1.5px] border-[rgb(211,212,213)]">
+                    <div class="w-full flex justify-between items-center uppercase">
+                        <a href="#" class="text-xs">Find in Store</a>
+                        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    </div>
+                    <P class="mt-[25px] font-normal text-sm">Please select a size to see availability at a store near you.</P>
+                </div>
+                <h3 class="mt-[3px] lg:text-xl mb-[10px] mt-[38px]">Also Consider</h3>
+                <div class="w-full h-[280px] grid grid-cols-2 gap-4 ">
+                    <div class="w-full flex flex-col shadow-lg shadow-slate-200">
+                        <img src="./assets/images/Men's Tree Runners - 1.avif" class="w-full h-[80%]" alt="">
+                        <a href="#" class="w-full h-[20%] text-center py-[8%]">Men's Tree Runners</a>
+                    </div>
+                    <div class="w-full flex flex-col justify-center bg-[rgb(245,245,245)] shadow-lg shadow-slate-200">
+                        <img src="./assets/images/Men's Tree Runners - 1.avif" class="w-full h-[80%]" alt="">
+                        <a href="#" class="w-full h-[20%] bg-[rgb(255,255,255)] text-center py-[8%]">Women's Tree Gliders</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w-full mt-[40px] pl-3 pr-3  lg:pr-10 lg:pl-6 mt-[80px]">
+            <h3 class="mb-[15px] text-2xl">Effortless Comfort</h3>
+            <div class="w-full flex flex-col md:flex-row gap-[8px]">
+                <div class="w-full flex flex-col gap-3 text-base">
+                    <img src="./assets/images/sectionShoe-3-1.avif" alt="" class="h-[450px]">
+                    <h4 class="font-black text-xl">Super Soft Material</h4>
+                    <p class="text-base">Upper blend made with wool is so luxe you can go sockless and never look back.</p>
+                </div>
+                <div class="w-full flex flex-col gap-3 text-base">
+                    <img src="./assets/images/section.avif" alt="" class="h-[450px]">
+                    <h4 class="font-black text-xl">Super Soft Material</h4>
+                    <p class="text-base">Upper blend made with wool is so luxe you can go sockless and never look back.</p>
+                </div>
+                <div class="w-full flex flex-col gap-3 text-base">
+                    <img src="./assets/images/sectionShow-3-3.avif" alt="" class="h-[450px]">
+                    <h4 class="font-black text-xl">Super Soft Material</h4>
+                    <p class="text-base">Upper blend made with wool is so luxe you can go sockless and never look back.</p>
+                </div>
+            </div>
+        </section>
+        <section class="w-full mt-[40px] pl-3 pr-3 lg:pr-10 lg:pl-6  mt-[80px] box-border">
+            <h3 class="mb-[15px] text-2xl">Elevated Design</h3>
+            <div class="w-full flex flex-col md:flex-row gap-[8px]"> 
+                <div class="w-full flex flex-col gap-3 text-base">
+                    <img src="./assets/images/sectionShow-4-1.avif" alt="" class="h-[400px]">
+                    <h4 class="font-black text-xl">Super Soft Material</h4>
+                    <p class="text-base">Upper blend made with wool is so luxe you can go sockless and never look back.</p>
+                </div>
+                <div class="w-full flex flex-col gap-3 text-base">
+                    <img src="./assets/images/sectionShow-4-2.avif" alt="" class="h-[400px]">
+                    <h4 class="font-black text-xl">Super Soft Material</h4>
+                    <p class="text-base">Upper blend made with wool is so luxe you can go sockless and never look back.</p>
+                </div>
+                <div class="w-full flex flex-col gap-3 text-base">
+                    <img src="./assets/images/sectionShow-4-3.avif" alt="" class="h-[400px]">
+                    <h4 class="font-black text-xl">Super Soft Material</h4>
+                    <p class="text-base">Upper blend made with wool is so luxe you can go sockless and never look back.</p>
+                </div>
+            </div>
+        </section>
+        <section class="w-full mt-[100px] mb-[100px] box-border">
+            <div class="w-full flex flex-col items items-center">
+            <h2 class="text-xl lg:font-black text-3xl mb-[25px]">Men's Wool Piper Go Reviews</h2>
+            <p class="text-xl lg:font-[900] text-2xl mb-[8px]">
+                <span class="text-[35px]">4.7</span>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </p>
+            <p class="mb-[60px]">12 Reviews</p>
+            <p class="capitalize font-black tracking-wider text-xl mb-[5px]">size</p>
+            <div class="w-full relative mb-[10px]">
+                <div class="w-[65%] lg:w-[30%] flex flex-row justify-between mx-auto">
+                    <div class="h-[20px] w-[4px] bg-[rgb(230,230,230)]"></div>
+                    <div  class="h-[20px] w-[4px] bg-[rgb(230,230,230)]"></div>
+                    <div class="h-[20px] w-[4px] bg-[rgb(230,230,230)]"></div>
+                </div>
+                <div  class="w-[10px] h-[10px] bg-black rounded-full absolute top-[35%] lg:top-[24%] left-[33%] lg:left-[43%] z-10    "></div>
+                <div class="w-[65%] lg:w-[30%] absolute top-[50%] lg:top-[40%] left-[17.3%] lg:left-[35%] z-5 mx-auto h-[4px] bg-[rgb(230,230,230)] "></div>
+            </div>
+            <div class="w-[65%] text-xs lg:w-[30%] flex flex-row justify-between mx-auto text-sm">
+                <p>Runs Small</p>
+                <p>True to Size</p>
+                <p>Runs Large</p>
+            </div>
+            
+        </section>
+        <section class="w-full pl-3 pr-3 lg:pl-6 lg:pr-10 box-border">
+            <form action="" class="w-full flex flex-col gap-[10px] lg:grid grid-cols-4 gap-[20px]">
+                <div class="flex flex-col col-span-2 border-b-[2px] border-black">
+                    <label for="">Search</label>
+                    <div class="w-full relative bg-[rgb(245,245,245)]">
+                        <a href="" class="absolute font-thin left-[95%] top-[35%] z-50"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <input type="text" class="w-full bg-[rgb(245,245,245)] h-[45px] p-2" placeholder="Enter Search Terms" >
+                    </div>
+                </div>
+                <div class="w-full flex flex-col border-b-[2px] border-black">
+                    <label for="">Sort by</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px] text-sm">
+                        <option value="" class="text-[5px]">Newest</option>
+                    </select>                                                  
+                </div>
+                <a href="" class="w-full text-center py-5 border-[2px] border-black text-black uppercase font-semibold text-sm hover:bg-black hover:text-white lg:hidden">Filter By</a>
+                <div class="hidden lg:flex flex-col border-b-[2px] border-black">
+                    <label for="">Star Rating</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px]">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="hidden lg:flex-col border-b-[2px] border-black">
+                    <label for="">Typical Size</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px]">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="hidden lg:flex flex-col border-b-[2px] border-black">
+                    <label for="">Typical Width</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px]"">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="hidden lg:flex flex-col border-b-[2px] border-black">
+                    <label for="">Size Purchased</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px]"">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="hidden lg:flex flex-col border-b-[2px] border-black">
+                    <label for="">Size Purchased</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px]"">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="hidden lg:flex flex-col border-b-[2px] border-black">
+                    <label for="">Overall Fit</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px]"">
+                        <option value=""></option>
+                    </select>
+                </div>
+                <div class="hidden lg:flex flex-col border-b-[2px] border-black">
+                    <label for="">Activity Level</label>
+                    <select name="" id="" class="w-full bg-[rgb(245,245,245)] h-[45px]"">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </form>
+
+        </section>
+        <section class="w-full pl-3 pr-3 box-border lg:pl-6 lg:pr-10"> 
+            <h2 class="w-full py-[25px] border-b-[1px] border-[rgb(211,212,213)] text-xl">15 Reviews</h2>
+            <div class="w-full flex flex-col gap-5 lg:flex-row justify-between py-[50px] border-b-[1px] border-[rgb(211,212,213)]">
+                <div class="w-full lg:w-[50%] flex flex-col gap-5">
+                    <div class="mt-2">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold">Comfortable and Stylish!</h3>
+                    <p>Allbirds doesn’t disappoint! So many uses, easy to clean (can even go in washing machine). Great for walking, traveling etc. True to size. I have many pairs I like them so much.</p>
+                    <p>November 10, 2024</p>
+                </div>
+                <div class="w-full lg:w-[30%] p-7  flex flex-col bg-[rgb(245,245,245)]">
+                    <h3 class="text-lg font-bold pb-3 border-b-[1.5px] border-[rgb(211,212,213)] mb-4">Vernon S. <span class="text-sm">Verified Buyer</span></h3>
+                    <p class="text-sm font-bold mb-[3px]">Activity Level: <span class="font-light">Walking, Running</span></p>
+                    <p class="text-sm mb-[3px]">Errands, Traveling</p>
+                    <p class="text-sm font-bold mb-[3px]">Size Purchased: <span class="font-light ml-1">11</span></p>
+                    <p class="text-sm font-bold">Typical Size: <span class="font-light ml-1">11</span></p>
+
+                </div>
+            </div>
+            <div class="w-full flex flex-col gap-5 lg:flex-row justify-between py-[50px] mt-5 border-b-[1px] border-[rgb(211,212,213)]">
+                <div class="w-full lg:w-[50%] flex flex-col gap-5">
+                    <div class="mt-2">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold">Comfortable and Stylish!</h3>
+                    <p>Allbirds doesn’t disappoint! So many uses, easy to clean (can even go in washing machine). Great for walking, traveling etc. True to size. I have many pairs I like them so much.</p>
+                    <p>November 10, 2024</p>
+                </div>
+                <div class="w-full lg:w-[30%] p-7  flex flex-col bg-[rgb(245,245,245)]">
+                    <h3 class="text-lg font-bold pb-3 border-b-[1.5px] border-[rgb(211,212,213)] mb-4">Vernon S. <span class="text-sm">Verified Buyer</span></h3>
+                    <p class="text-sm font-bold mb-[3px]">Activity Level: <span class="font-light">Walking, Running</span></p>
+                    <p class="text-sm mb-[3px]">Errands, Traveling</p>
+                    <p class="text-sm font-bold mb-[3px]">Size Purchased: <span class="font-light ml-1">11</span></p>
+                    <p class="text-sm font-bold">Typical Size: <span class="font-light ml-1">11</span></p>
+
+                </div>
+            </div>
+            <div class="w-full flex flex-col gap-5 lg:flex-row justify-between py-[50px] border-b-[1px] border-[rgb(211,212,213)]">
+                <div class="w-full lg:w-[50%] flex flex-col gap-5">
+                    <div class="mt-2">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="text-xl font-extrabold">Comfortable and Stylish!</h3>
+                    <p>Allbirds doesn’t disappoint! So many uses, easy to clean (can even go in washing machine). Great for walking, traveling etc. True to size. I have many pairs I like them so much.</p>
+                    <p>November 10, 2024</p>
+                </div>
+                <div class="w-full lg:w-[30%] p-7  flex flex-col bg-[rgb(245,245,245)]">
+                    <h3 class="text-lg font-bold pb-3 border-b-[1.5px] border-[rgb(211,212,213)] mb-4">Vernon S. <span class="text-sm">Verified Buyer</span></h3>
+                    <p class="text-sm font-bold mb-[3px]">Activity Level: <span class="font-light">Walking, Running</span></p>
+                    <p class="text-sm mb-[3px]">Errands, Traveling</p>
+                    <p class="text-sm font-bold mb-[3px]">Size Purchased: <span class="font-light ml-1">11</span></p>
+                    <p class="text-sm font-bold">Typical Size: <span class="font-light ml-1">11</span></p>
+
+                </div>
+            </div>
+            <div class="w-full my-[50px] flex gap-10 text-sm items-center justify-center mx-auto"> 
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+        </section>
+        <section class="w-full pl-3 pr-3 mb-24 box-border lg:pl-6 lg:pr-10">
+            <h2 class="mb-[25px] uppercase text-lg">Recently Viewed</h2>
+            <div class="w-full flex flex-col md:flex-row gap-2">
+                <div class="w-full">
+                    <img src="./assets/images/Men's Tree Runners - 1.avif" alt="" class="bg-[rgb(245,245,245)] w-full lg:w-[300px]">
+                    <p>Men's Wool Piper</p>
+                </div>
+                <div class="w-full">
+                    <img src="./assets/images/Men's Tree Runners - 1.avif" alt="" class="bg-[rgb(245,245,245)] w-full lg:w-[300px]">
+                    <p>Men's Wool Piper</p>
+                </div>
+                <div class="w-full">
+                    <img src="./assets/images/Men's Tree Runners - 1.avif" alt="" class="bg-[rgb(245,245,245)] w-full lg:w-[300px]">
+                    <p>Men's Wool Piper</p>
+                </div>
+                <div class="w-full">
+                    <img src="./assets/images/Men's Tree Runners - 1.avif" alt="" class="bg-[rgb(245,245,245)] w-full lg:w-[300px]">
+                    <p>Men's Wool Piper</p>
+                </div>
+            </div>
+        </section>
+        <section class="w-full bg-[rgb(245,245,245)] pl-3 pr-3 py-[100px] box-border lg:pl-6 lg:pr-10">
+            <h2 class="mb-8 text-2xl">The Allbirds Approach</h2>
+            <div class="w-full flex flex-col gap-[12px] md:flex-row gap-[14px]">
+                <div>
+                    <h3 class="mb-3 text-lg">Wear-All-Day Comfort</h3>
+                    <p class="text-start text-sm">Lightweight, bouncy, and wildly comfortable, Allbirds shoes make any outing feel effortless. Slip in, lace up, or slide them on and enjoy the comfy support.</p>
+                    <a href="" class="underline">Learn More</a>
+                </div>
+                <div>
+                    <h3 class="mb-3 text-lg">Wear-All-Day Comfort</h3>
+                    <p class="text-start text-sm">Lightweight, bouncy, and wildly comfortable, Allbirds shoes make any outing feel effortless. Slip in, lace up, or slide them on and enjoy the comfy support.</p>
+                    <a href=""  class="underline">Learn More</a>
+                </div>
+                <div>
+                    <h3 class="mb-3 text-lg">Wear-All-Day Comfort</h3>
+                    <p class="text-start text-sm">Lightweight, bouncy, and wildly comfortable, Allbirds shoes make any outing feel effortless. Slip in, lace up, or slide them on and enjoy the comfy support.</p>
+                    <a href="" class="underline">Learn More</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="w-[100vw] bg-[rgb(33,33,33)] pl-3 pr-3 lg:pl-6 lg:pr-10 py-[120px]">
+        <form action="" class="text-start text-white mb-[70px]">
+            <label for="" class="font-light text-sm ">Enter your email to stay in touch!</label>
+            <div class="w-full flex flex-col mt-[15px] h-[100px] md:flex-row  lg:w-[400px] box-border gap-3 lg:gap-2">
+                <input type="text" class="h-[50%] w-full md:w-[60%] bg-[rgb(77,85,89)] border-b-[1.5px] border-white">
+                <a href="" class="w-full md:w-[40%] h-[50%] lg:ml-2 uppercase font-bold text-sm text-center pt-[10px] pb-[12px] px-3 bg-[rgb(77,85,89)]">SIGN UP</a>
+            </div>
+        </form>
+        <div class="w-full  lg:w-[70%] text-white flex flex-col gap-6 text-center lg:text-start lg:flex-row lg:justify-between mt-[20px]">
+            <div class="flex flex-col gap-3 lg:gap-6">
+                <h2 class="uppercase text-sm font-semibold">Help</h2>
+                <a href="" class="text-xs">Chat with us!</a>
+                <a href="" class="text-xs">1-888-963-8944</a>
+                <a href="" class="text-xs">1-814-251-9966 (Text)</a>
+                <a href="" class="text-xs">help@allbirds.com</a>
+                <a href="" class="text-xs">Returns/Exchanges</a>
+                <a href="" class="text-xs"> FAQ/Contact Us</a>
+                <a href="" class="text-xs">Afterpay</a>
+            </div>
+            <div class="flex flex-col gap-3 lg:gap-6">
+                <h2 class="uppercase text-sm font-semibold">shop</h2>
+                <a href="" class="text-xs">Men's Shoes</a>
+                <a href="" class="text-xs">Women's Shoes</a>
+                <a href="" class="text-xs">Men's Apparel</a>
+                <a href="" class="text-xs">Women's Apparel</a>
+                <a href="" class="text-xs">Socks</a>
+                <a href="" class="text-xs">Gift Cards</a>
+                <a href="" class="text-xs">Refer a Friend</a>
+                
+            </div>
+            <div class="flex flex-col gap-3 lg:gap-6">
+                <h2 class="uppercase text-sm font-semibold">company</h2>
+                <a href="" class="text-xs">Our Story</a>
+                <a href="" class="text-xs">Our Materials</a>
+                <a href="" class="text-xs">Sustainability</a>
+                <a href="" class="text-xs">Investors</a>
+                <a href="" class="text-xs">Shoe Care</a>
+                <a href="" class="text-xs">Affiliates</a>
+                <a href="" class="text-xs">Bulk Orders</a>
+                <a href="" class="text-xs">Press</a>
+                <a href="" class="text-xs">Allbirds Responsible Disclosure Program</a>
+                <a href="" class="text-xs">California Transparency Act</a>
+                <a href="" class="text-xs">Community Offers</a>
+                <a href="" class="text-xs">Our Blog</a>
+            </div>
+        </div>
+        <div class="w-full text-white flex flex-col items-center text-center lg:text-start gap-5 lg:flex-row mt-[50px] lg:mt-[100px]">
+            <div class="w-full lg:w-[20%] flex flex-col gap-3">
+                <h3 class="uppercase text-sm font-semibold">Follow the Flock</h3>
+                <p class="text-xs">Exclusive offers, a heads up on new things, and sightings of Allbirds in the wild. Oh, we have cute sheep, too. #allbirds</p>
+                <div class="flex justify-center lg:justify-start gap-5 lg:gap-2">
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""> <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <img src="./assets/images/footer-logo-2.png" alt="" class="w-[100px] lg:ml-[40px] border-gray-700">
+            <div class="w-full lg:w-[40%] flex flex-wrap justify-center lg:justify-start gap-3 lg:gap-2 lg:ml-[170px]">
+                <a href=""><img src="./assets/images/footer-imges/flag-ca.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/flag-cn.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/flag-cn.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/flag-nz.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/flag-nz.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/flag-uk.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/flag-us.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/flag-us.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/Japan-Flag.svg" alt="" class="w-[50px]"></a>
+                <a href=""><img src="./assets/images/footer-imges/South-Korea-Flag.svg" alt="" class="w-[50px]"></a>
+            </div>
+        </div>
+        <div class="w-full text-center mt-[50px] lg:mt-[100px] text-xs flex flex-col text-white">
+            <p class="mb-[20px]">© 2024 Allbirds, Inc. All Rights Reserved. <a href="" class="underlin">Terms</a>, <a href="" class="underline">Privacy</a> & <a href="" class="underline">Accessibility</a></p>
+            <a href="" class="underline">Do Not Sell My Personal Information</a>
+        </div>
+        
+        
+
+
+    </footer>
+</body>    
+
+            

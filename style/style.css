@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'vivianRegular';
+    src: url("../assets/font/geographwebregular.ttf");
+}
+@font-face {
+    font-family: "vivianMedium";
+    src: url("../assets/font/geographeditwebmedium.ttf");
+  }
+  @font-face {
+    font-family: "vivianBold";
+    src: url("../assets/font/geographwebbold.ttf");
+  }
+
+  * {
+    font-family: vivianRegular;
+  }
+  
+  h1,
+  h2,
+  h3 {
+    font-family: vivianBold !important;
+  }
+  
+  
